@@ -26,7 +26,7 @@ architecture test_bench of halfAdder_tb is
 	i_A     : in  std_logic; -- 1-bit input port
 	i_B     : in  std_logic; 
 	o_S     : out std_logic;  -- 1-bit output port (NOTE: NO semicolon on LAST port only!)	    
-	o_Cout     : out std_logic
+	o_Cout  : out std_logic
 	-- TODO: copy in port map from halfAdder.vhd
 	); -- the semicolon is here instead	
   end component;
@@ -51,7 +51,7 @@ begin
 		i_A     => w_sw1, -- notice comma (not a semicolon)
 		i_B     => w_sw0,
 		o_S     => w_led0,
-		o_Cout     => w_led1 -- no comma on LAST one
+		o_Cout  => w_led1 -- no comma on LAST one
 		-- TODO:  map Cout 
 	);
 

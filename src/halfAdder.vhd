@@ -30,7 +30,7 @@ entity halfAdder is
 	i_A     : in  std_logic; -- 1-bit input port
 	i_B     : in  std_logic; 
 	o_S     : out std_logic;  -- 1-bit output port (NOTE: NO semicolon on LAST port only!)	    
-	o_Cout     : out std_logic
+	o_Cout  : out std_logic
   ); -- the semicolon is here instead
 end halfAdder;
 
@@ -42,7 +42,7 @@ begin
 
 	-- *concurrent* signal assignments
 	o_S    <= i_A xor i_B;
-	o_Cout    <=i_A and i_B;
+	o_Cout <=i_A and i_B;
 	-- TODO:  Carry signal assignment
 	
 end halfAdder_arch;
